@@ -1,0 +1,67 @@
+.hero {
+    padding-top: 83px;
+    padding-bottom: 50px;
+    position: relative;
+
+    &__wrapper {
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 28px;
+        text-transform: uppercase;
+
+        color: $midnight;
+        margin-bottom: 6px;
+    }
+
+    &__subtitle {
+        margin: 0;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: -0.02em;
+
+
+        color: $midnight;
+    }
+
+    &__image-wrap {
+        margin-bottom: 20px;
+        // position: relative;
+    }
+    
+    &__image-wrap::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 420px;
+        top: 190px;
+        left: 0;
+        z-index: -2;
+        background: url("../../img/ganesha-bg.svg") no-repeat center center;
+        background-size: cover;
+    }
+
+    &__image-inner {
+        position: relative;
+    }
+
+    &__image-inner::before {
+        position: absolute;
+        content: "";
+        width: 256px;
+        height: 256px;
+        top: 90px;
+        left: 15px;
+        z-index: -1;
+        border-radius: 50%;
+        background-color: #FFE066;
+        filter: blur(40px);
+    }
+}

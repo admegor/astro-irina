@@ -45,7 +45,8 @@ let { src, dest } = require('gulp'),
     svgSprite = require('gulp-svg-sprite'),
     ttf2woff = require('gulp-ttf2woff'),
     ttf2woff2 = require('gulp-ttf2woff2'),
-    fonter = require('gulp-fonter');
+    fonter = require('gulp-fonter'),
+    normalize = require("node-normalize-scss");
 
 
 function browserSync(params) {
@@ -70,7 +71,8 @@ function css() {
     return src(path.src.css)
         .pipe(
             scss({
-                outputStyle: "expanded"
+                // outputStyle: "expanded",
+                includePaths: normalize.includePaths
             })
         )
         .pipe(groupmedia())

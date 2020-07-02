@@ -25,7 +25,7 @@ img {
     vertical-align: top;
 }
   
-  .visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -36,4 +36,49 @@ img {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.container {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.button--main {
+    display: block;
+    width: 100%;
+    background-color: $red-purple;
+    color: $white;
+    height: 48px;
+    border-radius: 24px;
+}
+
+.section-title__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    color: $midnight;
+}
+
+.section-title__count {
+    margin: 0;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 800;
+
+    color: $sand;
 }

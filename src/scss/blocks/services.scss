@@ -1,0 +1,61 @@
+.services {
+    padding-top: 50px;
+
+    &__wrapper {
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+
+    &__item {
+        width: 225px;
+        text-align: center;
+        padding: 38px 17px 59px 25px;
+        background-color: $ivory;
+        border-radius: 20px;
+
+        position: relative;
+        z-index: -3;
+    }
+
+    &__item::before {
+        content: "";
+        position: absolute;
+
+        width: 225px;
+        height: 100%;
+        top: -8px;
+        right: -8px;
+        border: double 1px #DAAE59;
+        border-radius: 20px;
+        z-index: -2;
+    }
+
+    &__item::after {
+        content: "";
+        position: absolute;
+
+        width: 57px;
+        height: 42px;
+        top: -30px;
+        left: 50%;
+        margin-left: -15px;
+
+        background: url("../../img/img-lotus-1.svg") no-repeat center center;
+        background-size: contain;
+        z-index: -1;
+    }
+
+    
+    &__item-title {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+
+        color: $midnight;
+    }
+
+    &__item-content {
+        font-size: 12px;
+    }
+}
