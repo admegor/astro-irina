@@ -38,6 +38,10 @@ img {
     overflow: hidden;
 }
 
+.main {
+    margin-top: -100px;
+}
+
 .button {
     margin: 0;
     padding: 0;
@@ -46,18 +50,26 @@ img {
 }
 
 .container {
-    max-width: 320px;
+    max-width: 1320px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 15px;
+    height: 100%;
 }
 
 .button--main {
     display: block;
-    width: 100%;
     background-color: $red-purple;
     color: $white;
-    height: 48px;
+    padding: 15px 60px;
     border-radius: 24px;
+    border: 1px solid transparent;
+    transition: all .2s ease-in;
+
+    &:hover {
+        color: $red-purple;
+        background-color: $white;
+        border-color: $red-purple;
+    }
 }
 
 .section-title__wrapper {

@@ -1,0 +1,31 @@
+.hero {
+    position: relative;
+    height: 100vh;
+
+    &__content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 40px;
+        line-height: 52px;
+        color: $midnight;
+        margin-bottom: 2.5%;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+
+    &__subtitle {
+        margin: 0;
+        font-size: 16px;
+        line-height: 18px;
+        color: $midnight;
+        letter-spacing: -0.02em;
+        font-weight: 600;
+        margin-bottom: 5%;
+    }
+}

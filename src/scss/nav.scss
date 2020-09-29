@@ -1,0 +1,49 @@
+.nav {
+
+    & ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+
+        & li + li {
+            margin-left: 16px;
+        }
+
+        & li {
+        }
+        
+        & li a {
+            padding: 10px 10px;
+            text-decoration: none;
+            color: $midnight;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+
+                width: 100%;
+                height: 2px;
+
+                left: 0;
+                bottom: 0;
+                background-color: $red-purple;
+                transition: all .3s ease;
+                opacity: 0;
+            }
+
+            &:hover::after {
+                width: 100%;
+                opacity: 1;
+                transform: translatey(-5px);
+            }
+
+            
+        }
+    }
+
+    &__toggle {
+        display: none;
+    }
+}
