@@ -1,12 +1,17 @@
 .hero {
     position: relative;
-    height: 100vh;
+    height: 656px;
 
     &__content {
         height: 100%;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-end;
+        
+        position: relative;
+    }
+
+    &__content-wrapper {
+        padding-left: 108px;
     }
 
     &__title {
@@ -27,5 +32,23 @@
         letter-spacing: -0.02em;
         font-weight: 600;
         margin-bottom: 5%;
+    }
+
+    &__image-wrap {
+        position: absolute;
+        top: 0;
+        right: -200px;
+        z-index: -1;
+        min-height: 870px;
+    }
+
+    &__btn {
+        margin-bottom: 130px;
+    }
+
+    &__count {
+        position: absolute;
+        left: 0;
+        bottom: 0;
     }
 }

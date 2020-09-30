@@ -17,6 +17,7 @@ body {
     font-weight: 500;
     font-style: normal;
     color: $main;
+    overflow-x: hidden;
 }
 
 img {
@@ -36,10 +37,6 @@ img {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
-
-.main {
-    margin-top: -100px;
 }
 
 .button {
@@ -88,8 +85,8 @@ img {
 
 .section-title__count {
     margin: 0;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 44px;
+    line-height: 100%;
     font-weight: 800;
 
     color: $sand;

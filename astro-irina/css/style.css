@@ -497,6 +497,7 @@ body {
   font-weight: 500;
   font-style: normal;
   color: #20233E;
+  overflow-x: hidden;
 }
 
 img {
@@ -517,10 +518,6 @@ img {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.main {
-  margin-top: -100px;
 }
 
 .button {
@@ -575,14 +572,19 @@ img {
 
 .section-title__count {
   margin: 0;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 44px;
+  line-height: 100%;
   font-weight: 800;
   color: #FCEEAA;
 }
 
 .header {
   height: 100px;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .header__wrapper {
@@ -653,13 +655,38 @@ img {
   display: none;
 }
 
-.logo__image {
-  width: 92px;
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social__item + li {
+  margin-left: 22px;
+}
+
+.social__item {
+  -webkit-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.social__item:hover {
+  -webkit-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.logo {
+  width: 183px;
 }
 
 .hero {
   position: relative;
-  height: 100vh;
+  height: 656px;
 }
 
 .hero__content {
@@ -667,12 +694,14 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+.hero__content-wrapper {
+  padding-left: 108px;
 }
 
 .hero__title {
@@ -693,6 +722,24 @@ img {
   letter-spacing: -0.02em;
   font-weight: 600;
   margin-bottom: 5%;
+}
+
+.hero__image-wrap {
+  position: absolute;
+  top: 0;
+  right: -200px;
+  z-index: -1;
+  min-height: 870px;
+}
+
+.hero__btn {
+  margin-bottom: 130px;
+}
+
+.hero__count {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .services {
