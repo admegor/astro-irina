@@ -67,6 +67,14 @@ img {
         background-color: transparent;
         border-color: $red-purple;
     }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:active {
+        background-color: #e6d0de;
+    }
 }
 
 .section-title__wrapper {

@@ -24,6 +24,10 @@
 
     &__tabs-btn {
         padding-right: 30px;
+
+        & a {
+            text-decoration: none;
+        }
     }
 
     &__tabs-btn-item + &__tabs-btn-item {
@@ -40,10 +44,6 @@
         cursor: pointer;
         position: relative;
         display: flex;
-
-        &--active {
-            color: $midnight;
-        }
 
         &:hover {
             color: $midnight;
@@ -70,6 +70,10 @@
         }
     }
 
+    .services__tabs-btn-item.active {
+        color: $midnight;
+    }
+
     &__items-wrapper {
         width: 730px;
         position: relative;
@@ -88,6 +92,7 @@
     &__item {
         background-color: $ivory;
         border-radius: 30px;
+        height: 420px;
         padding: 60px 0 60px 53px;
     }
 
@@ -100,6 +105,7 @@
     }
 
     &__item-content {
+        line-height: 24px;
         max-width: 323px;
     }
 
@@ -123,6 +129,32 @@
         left: -15px;
         top: -15px;
     }
+}
 
+.services__tab-item-wrap {
+    display: none;
+}
 
+.srv-faded {
+    opacity: 0;
+    transition: all .1s;
+}
+
+.srv-faded.srv-in {
+    opacity: 1;
+    transition: all .1s;
+}
+
+.srv-active {
+    display: block;
+}
+
+@media (max-width: 1110px) {
+    .services__tabs-wrapper {
+        display: none;
+    }
+
+    .services__tabs-wrapper-mobile {
+        display: block;
+    }
 }
