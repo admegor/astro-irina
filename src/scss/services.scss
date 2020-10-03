@@ -2,6 +2,10 @@
     padding-top: 130px;
     padding-bottom: 100px;
 
+    &__wrapper-mobile {
+        display: none;
+    }
+
     &__control {
         display: none;
     }
@@ -150,11 +154,95 @@
 }
 
 @media (max-width: 1110px) {
-    .services__tabs-wrapper {
-        display: none;
+    .services {
+        &__tabs-wrapper {
+            display: none;
+        }
+
+        &__wrapper-mobile {
+            display: flex;
+            // justify-content: center;
+        }
+
+        &__title {
+            margin-bottom: 45px;
+        }
+
+        &__tabs-wrapper-mobile {
+            display: block;
+        }
+
+        &__wrapper-mobile-item {
+            max-width: 226px;
+            height: 340px;
+            background-color: $ivory;
+            text-align: center;
+            padding: 30px 10px 0 20px;
+            margin-top: 28px;
+            position: relative;
+            border-radius: 20px;
+            margin-right: 50px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border: 2px solid #F5E283;
+                border-radius: 20px;
+                left: 10px;
+                top: -10px;
+            }
+        }
+
+        &__wrapper-mobile-title {
+            font-size: 14px;
+            color: $midnight;
+        }
+
+        &__wrapper-mobile-content {
+            font-size: 12px;
+        }
+
+        &__wrapper-mobile-item-lotus {
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            margin-left: -15px;
+        }
     }
 
-    .services__tabs-wrapper-mobile {
-        display: block;
+    .services__slider.slick-slider {
+        // min-width: 0;
+        // display: flex;
+        overflow: hidden;
+        margin-left: 50%;
+        position: relative;
+        padding-bottom: 100px;
+    }
+    .services__slider .slick-arrow {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30px;
+        height: 30px;
+    }
+
+    .services__slider .slick-prev {
+        right: 50px;
+    }
+
+    .services__slider .slick-list {
+        // display: flex;
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .services__slider .slick-track {
+        min-width: 0;
+        overflow: hidden;
+        display: flex;
+        // justify-content: center;
+        // width: 100%;
     }
 }
