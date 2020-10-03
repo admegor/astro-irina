@@ -64,7 +64,7 @@ img {
 
     &:hover {
         color: $red-purple;
-        background-color: $white;
+        background-color: transparent;
         border-color: $red-purple;
     }
 }
@@ -77,8 +77,8 @@ img {
 
 .section-title {
     margin: 0;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 36px;
+    line-height: 40px;
     font-weight: 700;
     color: $midnight;
 }
