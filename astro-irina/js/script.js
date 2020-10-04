@@ -52,4 +52,11 @@ $(document).ready(function() {
 $(window).on("scroll", function() {
     $('.header').toggleClass("active", $(this).scrollTop() > 100);
 });
+let menuBtn = document.querySelector('.header__toggle-wrapper');
+let menuBurger = document.querySelector('.header__toggle');
+
+menuBtn.onclick = function() {
+    menuBurger.classList.toggle('active');
+}
+
 
