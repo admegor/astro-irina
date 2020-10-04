@@ -5,6 +5,8 @@
     top: 0;
     left: 0;
     width: 100%;
+    
+    transition: 0.3s ease all;
 
     &__wrapper {
         display: flex;
@@ -20,5 +22,16 @@
         &:hover {
             text-decoration: underline;
         }
+    }
+    &.active {
+        background-color: white;
+        transition: 0.3s ease all;
+        opacity: .92;
+    }
+}
+
+@media (max-width: 900px) {
+    .header__phone {
+        display: none;
     }
 }
