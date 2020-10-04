@@ -586,6 +586,10 @@ img {
   color: #FCEEAA;
 }
 
+.pagingInfo {
+  display: none;
+}
+
 .header {
   height: 100px;
   z-index: 100;
@@ -916,6 +920,15 @@ img {
 }
 
 @media (max-width: 1110px) {
+  .pagingInfo {
+    display: inline;
+    color: #DAAE59;
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+  }
+
   .services__tabs-wrapper {
     display: none;
   }
@@ -924,6 +937,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    min-width: 0;
   }
 
   .services__title {
@@ -943,7 +957,6 @@ img {
     margin-top: 28px;
     position: relative;
     border-radius: 20px;
-    margin-right: 50px;
   }
 
   .services__wrapper-mobile-item::before {
@@ -960,6 +973,7 @@ img {
   .services__wrapper-mobile-title {
     font-size: 14px;
     color: #28156B;
+    margin: 0;
   }
 
   .services__wrapper-mobile-content {
@@ -975,34 +989,67 @@ img {
 
   .services__slider.slick-slider {
     overflow: hidden;
-    margin-left: 50%;
-    position: relative;
     padding-bottom: 100px;
   }
 
   .services__slider .slick-arrow {
     position: absolute;
+    font-size: 0;
     bottom: 0;
     right: 0;
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
+    border: none;
+  }
+
+  .services__slider .slick-arrow:focus {
+    outline: none;
+  }
+
+  .services__slider .slick-next {
+    background: url("../img/control-right.svg") no-repeat center center;
   }
 
   .services__slider .slick-prev {
     right: 50px;
+    background: url("../img/control-left.svg") no-repeat center center;
   }
 
   .services__slider .slick-list {
     min-width: 0;
-    overflow: hidden;
   }
 
   .services__slider .slick-track {
     min-width: 0;
-    overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .services__wrapper-mobile-item {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .section-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .section-title__count {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .services__wrapper {
+    padding-left: 0;
+  }
+
+  .services__count {
+    top: 0;
+    right: 0;
+    left: auto;
   }
 }
 
