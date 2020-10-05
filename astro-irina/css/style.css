@@ -636,6 +636,10 @@ img {
   display: none;
 }
 
+.menu__mobile {
+  display: none;
+}
+
 .nav ul {
   padding: 0;
   margin: 0;
@@ -1152,12 +1156,16 @@ img {
             transform: scale(0);
   }
 
-  .active .header {
+  .header.open {
     height: auto;
     background-color: white;
   }
 
   .active __mobile-nav {
+    display: block;
+  }
+
+  .menu__mobile.active {
     display: block;
   }
 

@@ -34,6 +34,10 @@
     }
 }
 
+.menu__mobile {
+    display: none;
+}
+
 @media (max-width: 900px) {
     .logo__image {
         width: 92px;
@@ -119,13 +123,26 @@
         }
     }
 
-    &.active .header{
+    .header.open  {
         height: auto;
         background-color: white;
     }
 
     &.active &__mobile-nav {
         display: block;
+    }
+
+    .menu__mobile.active {
+        display: block;
+    }
+
+    .menu__mobile.active .header {
+        // background-color: white;
+        // height: auto;
+    }
+
+    .menu__mobile {
+        // background-color: white;
     }
 
     // &.active .nav__list {
