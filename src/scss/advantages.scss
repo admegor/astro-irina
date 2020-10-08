@@ -1,0 +1,88 @@
+.advantages {
+    padding: 120px 0;
+    background-color: $ivory;
+
+    &__container {
+        position: relative;
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            bottom: -70px;
+            right: -250px;
+
+            width: 706px;
+            height: 528px;
+
+            background: url("../img/img-lotus-2-desktop.svg") no-repeat center center;
+            overflow: visible;
+        }
+    }
+
+    &__inner {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    
+    &__block-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__block {
+        display: flex;
+        position: relative;
+        padding-left: 110px;
+        max-width: 490px;
+
+        & img {
+            position: absolute;
+            left: 0;
+            top: 10px;
+        }
+    }
+
+    &__count {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+@media (max-width: 1260px) {
+    .advantages {
+        &__count {
+            left: auto;
+            right: 15px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .advantages {
+        padding: 40px 0;
+
+        &__container::before {
+            display: none;
+        }
+
+        &__block-wrapper {
+            justify-content: center;
+        }
+
+        &__block {
+            flex-direction: column;
+            align-items: center;
+            padding-left: 0;
+            & img {
+                position: relative;
+            }
+        }
+
+        &__block-inner {
+            text-align: center;
+        }
+    }
+}

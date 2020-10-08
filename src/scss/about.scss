@@ -1,9 +1,18 @@
 .about {
-
+    margin-bottom: 160px;
     &__wrapper {
         display: flex;
         justify-content: space-between;
         // align-self: center;
+    }
+
+    &__inner {
+        margin: 0 auto;
+        max-width: 1100px;
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+
     }
 
     &__image-wrapper {
@@ -75,9 +84,10 @@
 @media (max-width: 900px) {
     .about {
         padding-top: 50px;
+        margin-bottom: 30px;
         position: relative;
 
-        &__wrapper {
+        &__inner {
             flex-direction: column;
             // justify-content: center;
             align-items: center;
