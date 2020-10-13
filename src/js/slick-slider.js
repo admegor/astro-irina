@@ -1,13 +1,17 @@
 $(document).ready(function() {
 
-//   $('.faq__accordion-title').click(function() {
-//     $(this).next('.faq__accordion-inner').slideToggle();
+// $('.faq__accordion-title').click(function(){
+//   $(this).next('.faq__accordion-content').slideToggle();
+//   $(this).toggleClass('accordion-hidden');
 // })
 
-$('.faq__accordion').accordion({
-  // heightStyle: 'content',
-  collapsible: true,
-	header: '> .faq__accordion-item > .faq__accordion-title'
+$('.faq__accordion-title').click(function() {
+        
+  $(".faq__accordion-content").not($(this).next()).slideUp(400);
+  $(this).next().slideToggle(400);
+  
+  $(".faq__accordion-item").not($(this).closest(".faq__accordion-item")).removeClass("open-accordion");
+  $(this).closest(".faq__accordion-item").toggleClass("open-accordion");
 });
 
     $('.services__slider').slick({
