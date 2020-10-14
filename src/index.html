@@ -2152,18 +2152,25 @@
 
         <section class="register">
             <div class="container">
-                <div class="section-title__wrapper">
-                    <h2 class="faq__accordion-title section-title">Записаться на консультацию</h2>
-                    <p class="section-title__count">08</p>
+                <div class="register__inner">
+                    <div class="register__image-wrapper">
+                        <img src="img/register-photo.jpg" alt="Записаться" class="register__image">
+                    </div>
+                    <div class="register__content-wrapper">
+                        <div class="section-title__wrapper register__title">
+                            <h2 class="register__title section-title">Записаться<br> на консультацию</h2>
+                            <p class="section-title__count register__count">08</p>
+                        </div>
+                        <img class="register__image-mobile" src="img/register-photo.jpg" alt="Записаться" class="register__image">
+                        <p class="register__info">Оставьте данные и я свяжусь с вами в ближайшее время</p>
+                        <form class="register__form-wrapper" action="POST">
+                            <input class="register__input" type="text" name="name" id="name" placeholder="Ваше имя">
+                            <input class="register__input" type="tel" name="phone" id="phone" placeholder="Номер телефона">
+                            <input class="button--main button register__btn" type="submit" value="Записаться">
+                            <p class="register__form-info">Нажимая на кнопку, вы даете согласие на обработку своих <a href="#">персональных данных</a></p>
+                        </form>
+                    </div>
                 </div>
-                <img src="img/register-photo.jpg" alt="Записаться" class="register__image">
-                <p class="register__info">Оставьте данные и я свяжусь с вами в ближайшее время</p>
-                <form class="register-form" action="POST">
-                    <input type="text" name="name" id="name" placeholder="Ваше имя">
-                    <input type="tel" name="phone" id="phone" placeholder="Номер телефона">
-                    <input type="submit" value="Записаться">
-                    <p class="register-form__info">Нажимая на кнопку, вы даете согласие на обработку своих <a href="#">персональных данных</a></p>
-                </form>
             </div>
         </section>
 
