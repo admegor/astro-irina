@@ -1,10 +1,5 @@
 $(document).ready(function() {
 
-// $('.faq__accordion-title').click(function(){
-//   $(this).next('.faq__accordion-content').slideToggle();
-//   $(this).toggleClass('accordion-hidden');
-// })
-
 $('.faq__accordion-title').click(function() {
         
   $(".faq__accordion-content").not($(this).next()).slideUp(400);
@@ -35,6 +30,13 @@ $('.faq__accordion-title').click(function() {
         }
       ]
   });
+
+      $('.blog__slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: false,
+        // variableWidth: true
+    });
 
 });
 
