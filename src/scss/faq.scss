@@ -27,6 +27,7 @@
     &__accordion-item {
         border-bottom: 1px solid #DADBE0;
         cursor: pointer;
+        transition:  all .3s ease-in;
     }
 
     &__accordion-title {
@@ -67,7 +68,7 @@
             height: 2px;
 
             background-color: $midnight;
-            transition: .3s;
+            transition: .2s;
         }
         &::after {
             content: '';
@@ -109,7 +110,10 @@
             background: url("../img/icon-list-arrow.svg") no-repeat center center;
         }
     }
-    
+    &__accordion-item:hover {
+        transition: .3s;
+        border-bottom-color: #28156b;
+    }
 }
 
 .open-accordion .faq__accordion-content {
@@ -118,7 +122,6 @@
 
 .faq__accordion-item.open-accordion {
     border-bottom-color: $midnight;
-    transition: .3s;
 }
 
 .faq__accordion-title:hover,

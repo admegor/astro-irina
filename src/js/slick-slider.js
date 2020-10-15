@@ -35,7 +35,16 @@ $('.faq__accordion-title').click(function() {
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: false,
-        // variableWidth: true
+        // variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 1110,
+            settings: {
+              // variableWidth: false,
+              slidesToShow: 1
+            }
+          }
+        ]
     });
 
 });
@@ -56,4 +65,12 @@ let $slickElementFB = $('.feedback__slider');
 $slickElementFB.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
   let i = (currentSlide ? currentSlide : 0) + 1;
   $statusFB.text(i + '/' + slick.slideCount);
+});
+
+let $statusBlog = $('.pagingInfoBlog');
+let $slickElementBlog = $('.blog__slider');
+
+$slickElementBlog.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+  let i = (currentSlide ? currentSlide : 0) + 1;
+  $statusBlog.text(i + '/' + slick.slideCount);
 });
