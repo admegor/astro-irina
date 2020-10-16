@@ -1498,7 +1498,6 @@ img {
   height: 610px;
   padding: 60px;
   border-radius: 30px;
-  position: absolute;
   top: -120px;
   right: 0;
 }
@@ -1788,6 +1787,65 @@ img {
   position: absolute;
   top: 100px;
   right: 66px;
+}
+
+.contacts {
+  position: relative;
+}
+
+.contacts__inner {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.contacts__count {
+  display: none;
+}
+
+.contacts__content-wrapper {
+  width: 345px;
+  height: 368px;
+  position: absolute;
+  top: 30px;
+  background-color: #FFF9DB;
+  border-radius: 30px;
+  padding: 60px;
+  padding-top: 45px;
+}
+
+.contacts__content-wrapper::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #f5e283;
+  border-radius: 20px;
+  left: 10px;
+  top: -10px;
+}
+
+.contacts__inner-title {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.contacts__inner-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  margin-bottom: 17px;
+}
+
+.contacts__inner-text--link {
+  display: block;
+  margin-bottom: 17px;
+  color: inherit;
+  text-decoration: none;
+  z-index: 4;
 }
 
 @media (max-width: 1330px) {
@@ -2492,6 +2550,61 @@ img {
   .register__content-wrapper {
     padding: 20px 0;
   }
+
+  .contacts {
+    padding-top: 120px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+
+  .contacts__count {
+    display: block;
+    position: absolute;
+    right: 20px;
+  }
+
+  .contacts__content-wrapper {
+    width: auto;
+    height: auto;
+    position: inherit;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .contacts__content-wrapper::before {
+    display: none;
+  }
+
+  .contacts__title-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .contacts__inner-adress-wrapper {
+    position: absolute;
+    top: 50px;
+  }
+
+  .contacts__inner-adress-wrapper .contacts__inner-title {
+    line-height: 24px;
+    color: #28156B;
+    margin-bottom: 10px;
+  }
+
+  .contacts__inner-title:not(:first-child) {
+    display: none;
+  }
+
+  .contacts__inner-text--link {
+    color: #28156B;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .contacts__iframe-wrapper {
+    margin-bottom: 35px;
+  }
 }
 
 @media (max-width: 775px) {
@@ -2574,6 +2687,10 @@ img {
 }
 
 @media (max-width: 600px) {
+  .blog {
+    padding-bottom: 60px;
+  }
+
   .blog__link-inner {
     min-width: 0;
     width: auto;

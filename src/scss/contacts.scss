@@ -1,0 +1,115 @@
+.contacts {
+    position: relative;
+
+    &__inner {
+        max-width: 1060px;
+        margin: 0 auto;
+    }
+
+    &__count {
+        display: none;
+    }
+
+    &__content-wrapper {
+        width: 345px;
+        height: 368px;
+        position: absolute;
+        top: 30px;
+        background-color: $ivory;
+        border-radius: 30px;
+        padding: 60px;
+        padding-top: 45px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #f5e283;
+            border-radius: 20px;
+            left: 10px;
+            top: -10px;
+        }
+    }
+
+    &__inner-title {
+        margin: 0;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    &__inner-text {
+        margin: 0;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 500;
+        margin-bottom: 17px;
+        
+        &--link {
+            display: block;
+            margin-bottom: 17px;
+            color: inherit;
+            text-decoration: none;
+            z-index: 4;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .contacts {
+        padding-top: 120px;
+        padding-bottom: 20px;
+        position: relative;
+
+        &__count {
+            display: block;
+            position: absolute;
+            right: 20px;
+        }
+
+        &__content-wrapper {
+            width: auto;
+            height: auto;
+            position: inherit;
+            background-color: transparent;
+            padding: 0;
+
+            &::before {
+                display: none;
+            }
+        }
+
+        &__title-wrapper {
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        &__inner-adress-wrapper {
+            position: absolute;
+            top: 50px;
+
+            & .contacts__inner-title {
+                line-height: 24px;
+                color: $midnight;
+                margin-bottom: 10px;
+            }
+        }
+
+        &__inner-title:not(:first-child) {
+            display: none;
+        }
+
+        &__inner-text--link {
+            color: $midnight;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        &__iframe-wrapper {
+            margin-bottom: 35px;
+        }
+    }
+}

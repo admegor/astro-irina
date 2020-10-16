@@ -233,6 +233,8 @@
 
 @media (max-width: 600px) {
     .blog {
+        padding-bottom: 60px;
+        
         &__link-inner {
             min-width: 0;
             width: auto;
