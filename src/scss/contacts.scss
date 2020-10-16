@@ -1,6 +1,18 @@
 .contacts {
     position: relative;
 
+    &::before {
+        content: "";
+        position: absolute;
+        top: -210px;
+        right: 0px;
+        width: 398px;
+        height: 298px;
+        z-index: -1;
+
+        background: url("../img/img-lotus-2-desktop.svg") no-repeat center center;
+    }
+
     &__inner {
         max-width: 1060px;
         margin: 0 auto;
@@ -43,7 +55,7 @@
     &__inner-text {
         margin: 0;
         font-size: 14px;
-        line-height: 14px;
+        line-height: 18px;
         font-weight: 500;
         margin-bottom: 17px;
         
@@ -62,6 +74,11 @@
         padding-top: 120px;
         padding-bottom: 20px;
         position: relative;
+        overflow: hidden;
+
+        &::before {
+            display: none;
+        }
 
         &__count {
             display: block;

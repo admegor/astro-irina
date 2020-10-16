@@ -1,0 +1,88 @@
+.footer {
+    padding-top: 50px;
+
+    &__social {
+        order: 3;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__copyrights {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: .6;
+    }
+
+    &__all-rights-reserved {
+        margin-right: 20px;
+    }
+
+    &__privacy-policy {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .footer {
+        background-color: $ivory;
+        margin-top: 90px;
+        position: relative;
+        padding-bottom: 50px;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: -90px;
+            top: 10%;
+
+            width: 308px;
+            height: 230px;
+            background: url("../img/img-lotus-2-mobile.svg") no-repeat center center;
+        }
+
+        &__image {
+            width: 143px;
+            height: 68px;
+        }
+
+        &__social {
+            position: absolute;
+            top: -90px;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        &__logo {
+            margin-bottom: 15px;
+        }
+
+        &__nav ul {
+            flex-direction: column;
+        }
+
+        &__nav ul li + li {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+
+        &__copyrights {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
