@@ -1,6 +1,6 @@
 .services {
-    padding-top: 130px;
-    padding-bottom: 200px;
+    padding-top: 160px;
+    padding-bottom: 130px;
 
     &__wrapper-mobile {
         display: none;
@@ -18,7 +18,7 @@
     &__count {
         position: absolute;
         left: 0;
-        bottom: -50px;
+        bottom: -20px;
     }
 
     &__tabs-wrapper {
@@ -215,7 +215,7 @@
 
     .services__slider.slick-slider {
         overflow: hidden;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
     }
     .services__slider .slick-arrow {
         position: absolute;
@@ -256,7 +256,7 @@
 @media (max-width: 900px) {
     .services {
         padding-bottom: 110px;
-        padding-top: 30px;
+        padding-top: 0;
         &__wrapper {
             padding-left: 0;
         }

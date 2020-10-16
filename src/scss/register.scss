@@ -48,6 +48,10 @@
     &__info {
         margin: 0;
         margin-bottom: 35px;
+
+        & br {
+            display: none;
+        }
     }
 
     &__form-wrapper {
@@ -67,11 +71,11 @@
 
         &:focus {
             outline: none;
-            box-shadow:1px 1px 20px 1px rgba(0,0,0,0.14);
+            border: 1px solid $red-purple;
         }
         
         &:hover {
-            box-shadow:1px 1px 20px 1px rgba(0,0,0,0.14);
+            border: 1px solid $red-purple;
         }
     }
 
@@ -127,6 +131,21 @@
 
         &__content-wrapper {
             padding: 20px 0;
+        }
+
+        &__info {
+            color: $midnight;
+            font-weight: 600;
+            margin-bottom: 14px;
+            & br {
+                display: inline-block;
+            }
+        }
+
+        &__form-info {
+            font-size: 11px;
+            line-height: 17px;
+            opacity: .6;
         }
     }
 }

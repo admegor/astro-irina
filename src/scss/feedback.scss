@@ -78,7 +78,7 @@
 
     &__bg-wrapper {
         position: absolute;
-        right: -50px;
+        right: -85px;
         top: -105px;
     }
 
@@ -104,7 +104,7 @@
 .feedback__slider .slick-list {
     overflow: hidden;
     width: 772px;
-    height: 460px;
+    height: 475px;
 }
 
 .feedback__slider .slick-arrow {
@@ -148,6 +148,10 @@
 }
 
 @media (max-width: 1050px ) {
+
+    .feedback {
+        padding-bottom: 60px;
+    }
     .feedback__bg-wrapper {
         display: none;
     }
@@ -156,6 +160,7 @@
 @media (max-width: 775px) {
     .feedback {
         padding: 20px 0;
+        padding-bottom: 60px;
         &__item {
             width: 350px;
             padding: 50px 30px 50px 30px;

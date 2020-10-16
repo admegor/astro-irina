@@ -38,17 +38,9 @@
         margin-top: 90px;
         position: relative;
         padding-bottom: 50px;
-        overflow: hidden;
 
-        &::before {
-            content: "";
-            position: absolute;
-            right: -90px;
-            top: 10%;
-
-            width: 308px;
-            height: 230px;
-            background: url("../img/img-lotus-2-mobile.svg") no-repeat center center;
+        &__inner {
+            background: url("../img/img-lotus-2-mobile.svg") no-repeat 100% center;
         }
 
         &__image {

@@ -30,9 +30,13 @@
         background-color: indigo;
         border-radius: 30px;
         color: #ffffff;
-        margin-right: 40px;
+        // margin-right: 40px;
         min-width: 0;
         overflow: hidden;
+
+        & + & {
+            margin-left: 40px;
+        }
     }
 
     &__button-wrapper {
@@ -198,6 +202,8 @@
         left: 0px;
     }
     .blog {
+        padding-top: 60px;
+        padding-bottom: 60px;
 
         &__slider {
             max-width: 510px;
@@ -234,6 +240,7 @@
 
 @media (max-width: 600px) {
     .blog {
+        padding-top: 60px;
         padding-bottom: 60px;
 
         &__link-inner {

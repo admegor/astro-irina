@@ -5,8 +5,11 @@
     top: 0;
     left: 0;
     width: 100%;
-    
     transition: 0.3s ease all;
+
+    &__wrapper {
+        padding: 10px 0;
+    }
 
     &__mobile-wrap {
         display: flex;

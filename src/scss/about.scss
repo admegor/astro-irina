@@ -83,13 +83,12 @@
 
 @media (max-width: 900px) {
     .about {
-        padding-top: 50px;
-        margin-bottom: 30px;
+        padding-top: 60px;
+        margin-bottom: 60px;
         position: relative;
 
         &__inner {
             flex-direction: column;
-            // justify-content: center;
             align-items: center;
         }
 
@@ -105,6 +104,10 @@
             min-width: auto;
             margin-right: 0;
             margin-bottom: 35px;
+        }
+
+        &__subtitle {
+            font-size: 18px;
         }
     }
 }

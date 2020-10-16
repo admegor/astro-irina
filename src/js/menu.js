@@ -8,3 +8,9 @@ menuBtn.onclick = function() {
     menuMobile.classList.toggle('active');
     header.classList.toggle('open');
 }
+
+$('.menu__mobile-link').click(function() {
+    menuBurger.classList.toggle('active');
+    menuMobile.classList.toggle('active');
+    header.classList.toggle('open');
+});

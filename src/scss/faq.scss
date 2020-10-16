@@ -1,5 +1,6 @@
 .faq {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 90px;
 
     &__image-wrapper {
         position: relative;
@@ -27,7 +28,7 @@
     &__accordion-item {
         border-bottom: 1px solid #DADBE0;
         cursor: pointer;
-        transition:  all .3s ease-in;
+        transition: all .3s ease-in;
     }
 
     &__accordion-title {
@@ -47,7 +48,6 @@
 
     &__accordion-content {
         display: none;
-        padding-left: 10px;
         font-size: 16px;
         line-height: 26px;
         font-weight: 500;
@@ -84,12 +84,17 @@
         }
     }
 
+    &__content {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
     &__content-list {
         margin: 0;
         padding: 0;
         list-style: none;
         padding-bottom: 30px;
-        padding-left: 20px;
+        padding-left: 30px;
     }
 
     &__content-item + li {
@@ -163,7 +168,7 @@
     .faq {
         position: relative;
         padding-top: 70px;
-        padding-bottom: 20px;
+        padding-bottom: 60px;
 
         &__wrapper {
             display: flex;
@@ -235,6 +240,10 @@
 
         &__content-item::before {
             top: 1px;
+        }
+
+        &__content {
+            line-height: 18px;
         }
     }
 
